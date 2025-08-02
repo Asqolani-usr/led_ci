@@ -22,3 +22,8 @@ $routes->post('/organisasi/simpan', 'OrganisasiController::simpan');
 $routes->get('/organisasi/edit/(:num)', 'OrganisasiController::edit/$1');
 $routes->post('/organisasi/update/(:num)', 'OrganisasiController::update/$1');
 $routes->post('/organisasi/hapus/(:num)' , 'OrganisasiController::hapus/$1');
+
+// Route untuk Login
+$routes->get('/login', 'AuthController::index');
+$routes->post('/login', 'AuthController::login');
+$routes->get('/logout', 'AuthController::logout');
