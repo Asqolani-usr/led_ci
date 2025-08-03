@@ -27,26 +27,56 @@ class AnggotaController extends BaseController
 
     public function tambah()
     {
-        echo 'Halaman tambah anggota';
+        return view ('anggota/tambah');
     }
 
     public function simpan()
     {
-        //
+        $model = new AnggotaModel(); 
+
+        $data = [
+            'nik' => $this->request->getPost('nik'),
+            'nama' => $this->request->getPost('nama'),
+            'alamat' => $this->request->getPost('alamat'),
+            'jenis_kelamin' => $this->request->getPost('jenis_kelamin'),
+        ];
+
+        $model->insert($data);
+        return redirect()->to('/anggota');
     }
 
     public function edit($id)
     {
-        //
+        $model = new AnggotaModel();
+        $data['anggota'] = $model->find($id);
+        return view('anggota/edit', $data);
     }
 
     public function update($id)
     {
-        //
+        $model = new AnggotaModel();
+
+        $data = [
+            'nik' => $this->request->getPost('nik'),
+            'nama' => $this->request->getPost('nama'),
+            'alamat' => $this->request->getPost('alamat'),
+            'jenis_kelamin' => $this->request->getPost('jenis_kelamin'),
+        ];
+
+        $model->update($id, $data);
+        return redirect()->to('/anggota');
     }
 
     public function hapus($id)
     {
-        //
+        $model = new AnggotaModel();
+
+        $data = $model->find($id);
+        if (!$data) {
+            return redirect()->to('/anggota')->with('error', 'Data tidak ditemukan');
+        }
+
+        $model->delete($id);
+        return redirect()->to('/anggota')->with('success', 'Data berhasil dihapus');
     }
 }

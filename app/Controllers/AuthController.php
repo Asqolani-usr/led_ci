@@ -33,17 +33,13 @@ class AuthController extends Controller
                     'isLoggedIn' => true
                 ]);
 
-                // // Cek isi session
-                // dd(session()->get());
-
-                // Jangan pakai session()->remove('msg'), karena flashdata ilang sendiri
-                return redirect()->to('/anggota'); // arahkan ke halaman setelah login
+                return redirect()->to('/'); 
             } else {
-                $session->setFlashdata('msg', 'Password salah, coba lagi ya');
+                $session->setFlashdata('msg', 'Password salah, coba lagi!');
                 return redirect()->to('/login');
             }
         } else {
-            $session->setFlashdata('msg', 'Username nggak ditemukan');
+            $session->setFlashdata('msg', 'Username Tidak ditemukan');
             return redirect()->to('/login');
         }
     }
