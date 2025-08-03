@@ -268,13 +268,4 @@
                 </nav>
                 <!-- End of Topbar -->
 
-                <?= $this->renderSection('content'); ?>
-
-            </div> <!-- End of #content -->
-        </div> <!-- End of #content-wrapper -->
-    </div> <!-- End of #wrapper -->
-    
-
-</body>
-
-</html>
+                <!-- Begin Page Content -->
