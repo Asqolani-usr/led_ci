@@ -4,15 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class HomeModel extends Model
+class KegiatanModel extends Model
 {
-    protected $table            = 'home';
+    protected $table            = 'kegiatan';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
+    protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['judul_kegiatan','tanggal', 'lokasi', 'penanggung_jawab', 'deskripsi'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;

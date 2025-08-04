@@ -23,6 +23,14 @@ $routes->get('/organisasi/edit/(:num)', 'OrganisasiController::edit/$1');
 $routes->post('/organisasi/update/(:num)', 'OrganisasiController::update/$1');
 $routes->post('/organisasi/hapus/(:num)' , 'OrganisasiController::hapus/$1');
 
+// Route untuk Kegiatan
+$routes->get('/kegiatan', 'KegiatanController::index');
+$routes->get('/kegiatan/tambah', 'KegiatanController::tambah');
+$routes->post('/kegiatan/simpan', 'KegiatanController::simpan');
+$routes->get('/kegiatan/edit/(:num)', 'KegiatanController::edit/$1');
+$routes->post('/kegiatan/update/(:num)', 'KegiatanController::update/$1');
+$routes->post('/kegiatan/hapus/(:num)', 'KegiatanController::hapus/$1');
+
 // Route untuk Login
 $routes->get('/login', 'AuthController::index');
 $routes->post('/login', 'AuthController::login');

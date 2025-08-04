@@ -60,6 +60,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?= base_url('anggota'); ?>">Data Anggota</a>
                         <a class="collapse-item" href="<?= base_url('organisasi'); ?>">Data Organisasi</a>
+                        <a class="collapse-item" href="<?= base_url(''); ?>">Data Kegiatan</a>
                     </div>
                 </div>
             </li>

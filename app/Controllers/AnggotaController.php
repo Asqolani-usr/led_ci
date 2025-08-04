@@ -17,22 +17,18 @@ class AnggotaController extends BaseController
 
     public function index()
     {
-        if (!session()->get('isLoggedIn')) {
-            return redirect()->to('/login');
-        }
-
         $data['anggota'] = $this->Modelanggota->findAll();
         return view('anggota/index', $data);
     }
 
     public function tambah()
     {
-        return view ('anggota/tambah');
+        return view('anggota/tambah');
     }
 
     public function simpan()
     {
-        $model = new AnggotaModel(); 
+        $model = new AnggotaModel();
 
         $data = [
             'nik' => $this->request->getPost('nik'),
@@ -64,7 +60,7 @@ class AnggotaController extends BaseController
         ];
 
         $model->update($id, $data);
-        return redirect()->to('/anggota');
+        return redirect()->to('/anggota')->with('success', 'Data berhasil diupdate');
     }
 
     public function hapus($id)

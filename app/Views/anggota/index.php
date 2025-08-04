@@ -56,8 +56,8 @@
                                 </td>
                                 <td class="text-center mx-8">
                                     <div class="btn-group" role="group" aria-label="Action buttons">
-                                        <a href="<?= base_url('anggota/edit/' . $row->id) ?>"
-                                            class="btn btn-warning btn-sm" data-toggle="tooltip" title="Edit Data">
+                                        <a href="<?= base_url('anggota/edit/' . $row->id) ?>" class="btn btn-warning btn-sm"
+                                            data-toggle="tooltip" title="Edit Data">
                                             <i class="fas fa-edit"></i>
                                             <span class="d-none d-md-inline"> Edit</span>
                                         </a>
@@ -78,18 +78,18 @@
                         <?php } ?>
                     </tbody>
                 </table>
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">Previous</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">1</a></li>
-                        <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">2</a></li>
-                        <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">3</a></li>
-                        <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">Next</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
+        <nav class="container-fluid" aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="<?= base_url('anggota') ?>">Sebelumnya</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">1</a></li>
+                <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">2</a></li>
+                <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">3</a></li>
+                <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">Selanjutnya</a></li>
+            </ul>
+        </nav>
     </div>
 </div>
 <!-- End of Main Content -->
@@ -164,4 +164,3 @@
 
 
 <?= $this->endSection(); ?>
-

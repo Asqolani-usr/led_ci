@@ -65,24 +65,24 @@
                                                 <span class="d-none d-md-inline"> Hapus</span>
                                             </button>
                                         </form>
-                                        
+
                                     </div>
                                 </td>
                             </tr>
                         <?php } ?>
                     </tbody>
                 </table>
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">Previous</a></li>
-                        <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">1</a></li>
-                        <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">2</a></li>
-                        <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">3</a></li>
-                        <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">Next</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
+        <nav class="container-fluid" aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">1</a></li>
+                <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">2</a></li>
+                <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">3</a></li>
+                <li class="page-item"><a class="page-link" href="<?= base_url('organisasi') ?>">Next</a></li>
+            </ul>
+        </nav>
     </div>
 </div>
 <!-- End of Main Content -->
