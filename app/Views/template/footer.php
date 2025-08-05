@@ -1,25 +1,27 @@
-<!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2025</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
+<body class="d-flex flex-column min-vh-100">
 
-        </div>
-        <!-- End of Content Wrapper -->
-
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        <!-- (Konten dashboard kamu tetap di sini) -->
     </div>
     <!-- End of Page Wrapper -->
+
+    <!-- Footer -->
+    <footer class="sticky-footer bg-white mt-auto">
+        <div class="container text-center">
+            <div class="copyright text-center my-auto">
+                <span>Copyright &copy; Your Website 2025</span>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
+    <!-- Logout Modal -->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -50,5 +52,3 @@
     <script src="<?= base_url('js/sb-admin-2.min.js'); ?>"></script>
 
 </body>
-
-</html>
