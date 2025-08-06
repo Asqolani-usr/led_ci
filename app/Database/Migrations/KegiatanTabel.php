@@ -11,26 +11,23 @@ class KegiatanTabel extends Migration
         $this->forge->addField([
             'id' => [
                 'type' => 'INT',
-                'constraint' => 10,
+                'constraint' => 11,
                 'unsigned' => true,
                 'auto_increment' => true,
             ],
-            'jenis_kegiatan' => [
+            'judul_kegiatan' => [
                 'type' => 'VARCHAR',
-                'constraint' => '25',
+                'constraint' => '255',
             ],
-            'nama' => [
-                'type' => 'varchar',
-                'constraint' => '35',
-                'null' => false,
+            'tanggal' => [
+                'type' => 'DATE',
             ],
-            'alamat' => [
-                'type' => 'text',
-                'null' => true,
+            'lokasi' => [
+                'type' => 'VARCHAR',
+                'constraint' => '255',
             ],
-            'jenis_kelamin' => [
-                'type' => 'CHAR',
-                'constraint' => '2',
+            'deskripsi' => [
+                'type' => 'TEXT',
                 'null' => true,
             ],
         ]);
@@ -40,6 +37,6 @@ class KegiatanTabel extends Migration
 
     public function down()
     {
-        $this->forge->dropTable('organisasi');
+        $this->forge->dropTable('kegiatan');
     }
 }

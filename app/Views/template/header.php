@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>TUGAS LED CI</title>
+    <title>FORMALA</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url('vendor/fontawesome-free/css/all.min.css'); ?>" rel="stylesheet" type="text/css">
@@ -23,7 +23,7 @@
 
 </head>
 
-<body id="page-top">
+<body class="d-flex flex-column min-vh-100" id="page-top">
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -60,7 +60,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?= base_url('anggota'); ?>">Data Anggota</a>
                         <a class="collapse-item" href="<?= base_url('organisasi'); ?>">Data Organisasi</a>
-                        <a class="collapse-item" href="<?= base_url(''); ?>">Data Kegiatan</a>
+                        <a class="collapse-item" href="<?= base_url('kegiatan'); ?>">Data Kegiatan</a>
                     </div>
                 </div>
             </li>
@@ -217,8 +217,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src=""
-                                            alt="...">
+                                        <img class="rounded-circle" src="" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div>
@@ -261,6 +260,32 @@
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
+                            </div>
+                            <!-- Scroll to Top Button-->
+                            <a class="scroll-to-top rounded" href="#page-top">
+                                <i class="fas fa-angle-up"></i>
+                            </a>
+
+                            <!-- Logout Modal -->
+                            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">Select "Logout" below if you are ready to end your
+                                            current session.</div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary" type="button"
+                                                data-dismiss="modal">Cancel</button>
+                                            <a class="btn btn-primary" href="<?= base_url('login'); ?>">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
 

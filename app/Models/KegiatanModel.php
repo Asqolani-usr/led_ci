@@ -12,7 +12,7 @@ class KegiatanModel extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['judul_kegiatan','tanggal', 'lokasi', 'penanggung_jawab', 'deskripsi'];
+    protected $allowedFields    = ['judul_kegiatan','tanggal', 'lokasi', 'deskripsi'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
