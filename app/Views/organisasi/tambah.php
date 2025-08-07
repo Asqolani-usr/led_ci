@@ -25,6 +25,7 @@
                                 <textarea name="deskripsi" class="form-control" id="deskripsi" rows="3"></textarea>
                             </div>
                             <button class="btn btn-primary " type="submit">Simpan</button>
+                            <a href="<?= base_url('/organisasi'); ?>" class="btn btn-secondary">Kembali</a>
                         </form>
 
                     </div>

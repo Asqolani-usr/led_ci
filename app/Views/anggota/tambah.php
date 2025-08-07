@@ -29,6 +29,7 @@
                                 <input type="text" name="jenis_kelamin" class="form-control" id="jenis_kelamin">
                             </div>
                             <button class="btn btn-primary " type="submit">Simpan</button>
+                            <a href="<?= base_url('/anggota'); ?>" class="btn btn-secondary">Kembali</a>
                         </form>
 
                     </div>
